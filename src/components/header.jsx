@@ -1,10 +1,9 @@
 import SiteLogo from '../assets/site-logo.png'
 
 export default function Header() {
-  console.log("link", window.location.href)
   return (
-    <div className='w-full flex justify-center pt-[2.75rem]'>
-    <div className="w-[75rem] flex" style={{
+    <div className='3xl:w-full sm:w-[40rem] flex justify-center pt-[2.75rem]'>
+    <div className="3xl:w-[75rem] w-[40rem] flex" style={{
       flexDirection: window.location.href !==  "http://localhost:3000/" ? "row" : "column",
       alignItems: window.location.href !== "http://localhost:3000/" ? "center" : "start"
     }}>

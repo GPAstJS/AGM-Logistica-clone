@@ -1,39 +1,56 @@
-import useSendMail from "../hooks/useSendMail";
+import {useState, useEffect } from 'react'
+
+import Fetch from "../hooks/sendMail";
+
 
 import React from "react";
 import WhatsAppIcon from '../assets/whatsapp.svg'
 
 const Form = () => {
+
+  const [dados, setDados] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      try { 
+      } catch (err) {
+        console.log('Error occured when fetching books');
+      }
+    })();
+  }, []);
+
+  console.log(dados.bio)
+
+  
   return (
-    <div className="w-full flex-flex-col font-montserrat mt-10 mb-10">
-      <useSendMail/>
-      <div className="w-full text-center flex flex-col items-center tracking-widest font-bold text-[#417581]">
-        <h6 className="w-[72.5rem]">atendimento</h6>
-        <h2 className="w-[72.5rem] uppercase border-gray-200     border-b-2     text-black text-5xl tracking-wide">
+    <div className="3xl:w-full sm:w-[40rem]  flex flex-col font-montserrat mt-10 mb-10">
+      <div className="3xl:w-full sm:w-[40rem] text-center flex flex-col items-center tracking-widest font-bold text-[#417581]">
+        <h6 className="3xl:w-[72.5rem] sm:w-[40rem] ">atendimento</h6>
+        <h2 className="3xl:w-[72.5rem] sm:w-[40rem] uppercase border-gray-200     border-b-2     text-black 3xl:text-5xl sm:text-3xl tracking-wide">
           entre em contato
         </h2>
       </div>
 
-      <div className="w-full flex flex-row justify-center mt-10">
-        <div className=" w-[40rem]">
-            <div className="gap-4  grid grid-cols-2">
-                
-            <input className="border-[1px] p-3 border-[#7a7a7a]" type="text" placeholder="Nome" />
-            <input className="border-[1px] p-3 border-[#7a7a7a]" type="text" placeholder="Email" />
-            <input className="border-[1px] p-3 border-[#7a7a7a]" type="text" placeholder="Telefone" />
-            <input className="border-[1px] p-3 border-[#7a7a7a]" type="text" placeholder="Empresa" />
-            <textarea className="w-[40rem] h-[13rem] border-[1px] p-3 border-[#7a7a7a]" placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            
-            <div className="w-[40rem] h-[5rem] flex justify-center items-center ">
-            <button className="uppercase hover:bg-[#F7A600] hover:duration-500 text-white font-bold w-[20rem] h-[3rem] bg-[#075E6C] tracking-[0.2rem]" >solicitar contato</button>
-            </div>
+      <div className="w-full flex 3xl:flex-row sm:flex-col justify-center mt-10">
+        <div className="w-[40rem]">
+          <div className="3xl:grid 3xl:grid-cols-2 3xl:gap-4 sm:flex sm:flex-col sm:px-5 ">
+
+            <input className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Nome" />
+            <input className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Email" />
+            <input className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Telefone" />
+            <input className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Empresa" />
+            <textarea className="3xl:w-[40rem]  h-[13rem] border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] " placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div className="w-[40rem] h-[5rem] flex justify-center items-center ">
+            <button className="uppercase   hover:bg-[#F7A600] hover:duration-500 text-white font-bold w-[20rem] h-[3rem] bg-[#075E6C] tracking-[0.2rem]" >solicitar contato</button>
+          </div>
 
         </div>
 
-        <div className=" ml-20 flex flex-col items-center w-[27rem] h-[21.25rem] justify-center bg-[#075e6c]">
+        <div className=" flex flex-col items-center 3xl:w-[27rem] sm:w-[40rem] h-[21.25rem] justify-center sm: ">
 
-          <div className="flex flex-col items-center text-center text-white font-montserrat font-bold">
+          <div className="sm:w-[37.5rem] sm:h-[18rem] flex flex-col justify-center items-center text-center text-white font-montserrat font-bold  bg-[#075e6c]">
 
             <img className="mb-5" src={WhatsAppIcon} alt="WhatsApp Icon" />
 
@@ -51,7 +68,7 @@ const Form = () => {
             </div>
 
           </div>
-          
+
         </div>
       </div>
     </div>

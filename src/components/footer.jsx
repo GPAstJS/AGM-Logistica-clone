@@ -3,39 +3,39 @@ import CheckIcon from "../assets/check-icon.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-[#2E3447]">
-      <div className="w-[75rem] h-[17.753rem] flex items-center justify-between bg-transparent">
-        <div className="flex flex-col font-montserrat text-white w-[15.5rem] mb-[4rem]">
-          <h5 className="tracking-widest w-full text-sm uppercase font-bold">
+    <div className="3xl:w-full sm:w-[40rem] flex flex-col 3xl:justify-center sm:justify-start 3xl:items-center sm:items-start bg-[#2E3447] sm:w-[30rem]">
+      <div className="3xl:w-[75rem] sm:w-full mt-10 flex 3xl:flex-row sm:flex-col 3xl:items-center sm:items-start ml-4 justify-between bg-transparent">
+        <div className="flex flex-col 3xl:w-[15.5rem] font-montserrat text-white  mb-[4rem] sm:w-[20rem]">
+          <h5 className="tracking-widest 3xl:text-sm sm:text-2xl uppercase font-bold sm:w-[26rem]">
             unidade pavuna centers
           </h5>
 
-          <p className="text-xs mt-[1rem]">
-            <strong className="text-sm">Rio de Janeiro</strong>
+          <p className="3xl:text-xs sm:text-xl mt-[1rem]">
+            <strong className="3xl:text-xs sm:text-xl">Rio de Janeiro</strong>
             <br />
             Estrada do Rio D'Ouro, 1000 - Módulos J,K e L - Pavuna - CEP:
             21535-030
           </p>
         </div>
 
-        <div className="flex flex-col font-montserrat text-white w-[15rem] mb-[4rem]">
-          <h5 className="tracking-widest text-sm uppercase font-bold">
+        <div className="flex flex-col font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[4rem]">
+          <h5 className="tracking-widest uppercase font-bold 3xl:text-sm sm:text-2xl">
             unidade pavuna gd
           </h5>
 
-          <p className="text-xs mt-[1rem]">
-            <strong className="text-sm">Rio de Janeiro</strong>
+          <p className="3xl:text-xs sm:text-xl mt-[1rem]">
+            <strong className="3xl:text-xs sm:text-xl">Rio de Janeiro</strong>
             <br />
             Rua Benjamin da Silva, 345 – Pavuna CEP: 21535-490
           </p>
         </div>
 
-        <div className="flex flex-col font-montserrat text-white w-[15rem] mb-[3.4rem]">
-          <h5 className="tracking-widest text-sm uppercase font-bold">
+        <div className="flex flex-col font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[3.4rem]">
+          <h5 className="tracking-widest 3xl:text-sm sm:text-2xl uppercase font-bold">
             contatos
           </h5>
 
-          <p className="text-xs mt-[1rem]">
+          <p className="3xl:text-xs sm:text-xl   mt-[1rem]">
             Comercial Logística:
             <br />
             <a
@@ -57,16 +57,16 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col font-montserrat text-white w-[15rem] mb-[6.3rem]">
-          <h5 className="tracking-widest text-sm uppercase font-bold">
+          <h5 className="tracking-widest 3xl:text-sm sm:text-xl uppercase font-bold">
             termos legais
           </h5>
 
           <a
-            className="hover:text-[#417581] duration-500  text-white flex flex-row text-xs mt-[1rem]"
+            className="hover:text-[#417581] duration-500  text-white 3xl:w-full sm:w-[18rem] flex flex-row 3xl:text-xs sm:text-xl mt-[1rem]"
             href="https://www.agmlogistica.com.br/politica-de-privacidade/"
           >
             <img
-              className=" fill-[#417581] hover:fill-white mr-1"
+              className=" fill-[#417581]  hover:fill-white mr-1"
               src={CheckIcon}
               alt="Check Icon"
             />
@@ -76,9 +76,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full bg-[#242938] flex justify-center">
+      <div className="w-full bg-[#242938] flex 3xl:justify-center sm:justify-start text-center">
 
-      <div className="flex justify-start  items-center  h-[3rem]  w-[75rem] bg-transparent text-white text-xs">
+      <div className="flex justify-start  mt-5 mb-3 items-center  h-[3rem]  3xl:w-[75rem] sm:w-[40rem] bg-transparent text-white sm:text-xl 3xl:text-xs">
         <p>
           © 2024 AGM Logistica. Todos os Direitos Reservados. - Desenvolvido
           pela Profile Design

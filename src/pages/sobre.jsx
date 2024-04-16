@@ -10,7 +10,7 @@ export default function Sobre() {
   return (
     <div>
       <Header />
-      <div className="w-full flex mt-20 flex-col items-center  font-montserrat">
+      <div className="3xl:w-full sm:w-[40rem] flex mt-20 flex-col items-center  font-montserrat">
             <div className="w-full bg-[#f6f6f6] h-[6rem] flex items-center h-[rem] justify-center">
                 
                 <div className="bg-transparent flex flex-row items-center justify-between w-[75rem]">
@@ -87,11 +87,11 @@ export default function Sobre() {
             <h6 className="text-[#075e6c] tracking-[0.2rem] font-bold">
               qualidades
             </h6>
-            <h2 className="uppercase font-bold text-5xl">
+            <h2 className="uppercase font-bold sm:text-3xl 3xl:text-5xl">
               porque escolher a agm
             </h2>
 
-            <div className="flex flex-row items-center justify-between w-[85rem] mt-20 font-montserrat">
+            <div className="flex 3xl:flex-row sm:flex-col items-center justify-between 3xl:w-[85rem] mt-20 font-montserrat">
               <div className="flex flex-col items-center text-center justify-center w-[17rem]">
                 <div className="flex items-center justify-center rounded-full w-[5rem] h-[5rem] bg-[#075e6c] mb-5">
                   <img src={BezierIcon} alt="Bezier Icon" />
