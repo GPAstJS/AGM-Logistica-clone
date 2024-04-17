@@ -18,11 +18,11 @@ import compromissosImg from "../assets/gestaodecompromissoimg.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center md:w-full sm:w-[100%]">
+    <div className="flex flex-col items-center md:w-full sm:w-[40rem]">
       <Header />
 
-      <div className="3xl:w-full sm:w-[90%] flex flex-row justify-around items-center">
-        <div className="3xl:w-[69rem] sm:w-[40rem] font-montserrat pt-20">
+      <div className="3xl:w-full sm:w-[40rem] flex flex-row justify-center items-center">
+        <div className="3xl:w-[69rem] sm:w-[38rem] font-montserrat pt-20">
           <h6 className="tracking-[0.3rem] text-[#417581] text-sm font-bold font-montserrat">
             conheça
           </h6>
@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             <span className="text-[#1E1D24]">em logística</span>
           </h2>
-          <p className="text-[17px] mt-10 tracking-2 text-left text-black opacity-75 3xl:w-[45rem] sm:w-[40rem]">
+          <p className="text-[17px] mt-10 tracking-2 text-left text-black opacity-75 3xl:w-[45rem] sm:w-full">
             Fornecemos ao mercado e aos nossos clientes soluções inteligentes e
             eficazes de gestão logística, zelando pela integridade dos seus
             patrimônios, das pessoas e do meio ambiente, de forma rentável,
@@ -40,7 +40,7 @@ export default function Home() {
             processos.
           </p>
           <div>
-            <div className="flex 3xl:flex-row sm:flex-col 3xl:justify-between sm:justify-center sm:items-center font-montserrat mt-10 font-semibold text-[#075E6C] 3xl:w-[42rem] sm:w-[40rem]">
+            <div className="flex 3xl:flex-row sm:flex-col 3xl:justify-between sm:justify-center sm:items-center font-montserrat mt-10 font-semibold text-[#075E6C] 3xl:w-[42rem] sm:w-[39rem]">
               <img
                 className="w-[11.375rem] h-[4.5rem] sm:mb-5"
                 src={amgDocLogo}
@@ -85,14 +85,14 @@ export default function Home() {
             AGMSBS Transportes, temos foco nas necessidades de cada cliente.
           </p>
 
-          <p className="text-[17px] mt-10 tracking-2  3xl:text-left sm:text-center  text-black opacity-75 sm:w-[40rem] 3xl:w-[72.5rem]">
+          <p className="text-[17px] mt-10 tracking-2  3xl:text-left sm:text-center  text-black opacity-75 sm:w-[39rem] 3xl:w-[72.5rem]">
             Com mais de 65 anos de experiência na área de armazenagem e
             logística, temos extenso know-how no desenvolvimento de projetos
             customizados. Através de uma estrutura flexível da AGM oferecemos
             soluções logísticas integradas a diversos segmentos.
           </p>
 
-          <p className="text-[17px] mt-10 tracking-2 3xl:text-left sm:text-center text-black opacity-75 sm:w-[40rem] 3xl:w-[72.5rem]">
+          <p className="text-[17px] mt-10 tracking-2 3xl:text-left sm:text-center text-black opacity-75 sm:w-[39rem] 3xl:w-[72.5rem]">
             Fornecemos soluções inteligentes e eficazes de gestão logística,
             zelamos pela integridade patrimonial, social e ambiental.
             Trabalhamos com o cliente na otimização e melhoria contínua de
@@ -159,7 +159,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="3xl:w-full flex flex-col mt-20  bg-transparent">
+      <div className="3xl:w-full sm:w-[40rem] flex flex-col mt-20  bg-transparent">
         <div className="3xl:w-full h-[16.25rem] flex items-center justify-center bg-[#0B4048]">
           <div className="3xl:w-[72.5rem] sm:w-[40rem]  bg-transparent tracking-[0.2rem] flex 3xl:flex-row sm:flex-col uppercase justify-between items-center text-white 3xl:text-3xl sm:text-[23px] sm:text-center  font-montserrat font-medium">
             <h4 className="mb-5">como podemos ajudar sua empresa?</h4>
@@ -318,7 +318,7 @@ export default function Home() {
       </div>
 
       <div className="3xl:w-full sm:w-[40rem] flex items-center justify-center mt-10 bg-[#075E6C] 3xl:h-[8rem] sm:h-full">
-        <div className="3xl:w-[72.5rem sm:w-full flex 3xl:flex-row sm:flex-col items-center 3xl:justify-around justify-center sm:justify-between font-montserrat uppercase font-medium text-white bg-transparent">
+        <div className="3xl:w-[72.5rem] sm:w-full flex 3xl:flex-row sm:flex-col items-center 3xl:justify-around 3xl:justify-center sm:justify-between font-montserrat uppercase font-medium text-white bg-transparent">
           <div className="flex flex-col items-center sm:mb-5 sm:mt-5">
             <span className="text-5xl">300</span>
             <p className="uppercase font-medium">funcionários</p>
@@ -343,9 +343,9 @@ export default function Home() {
       <div className="3xl:w-full sm:w-[40rem] flex flex-col items-center mt-20 justify-center">
         <div className="3xl:w-[72.5rem] sm:w-[40rem] flex flex-col">
           <div className="3xl:w-[72.5rem] sm:w-[40rem] flex 3xl:flex-row sm:flex-col items-center justify-between">
-            <div className="flex flex-col sm:items-center font-bold text-[#075e6c] tracking-[0.2rem] font-montserrat">
+            <div className="flex flex-col 3xl:items-start sm:items-center font-bold text-[#075e6c] tracking-[0.2rem] font-montserrat">
               <p>estrutura</p>
-              <h3 className="uppercase text-center font-bold font-montserrat text-black text-4xl opacity-90 tracking-[0.1rem]">
+              <h3 className="uppercase sm:text-center 3xl:text-start font-bold font-montserrat text-black text-4xl opacity-90 tracking-[0.1rem]">
                 segurança
                 <br />
                 tecnologia

@@ -40,7 +40,7 @@ export default function FAQ() {
       <div className=" sm:w-[40rem] 3xl:w-full flex flex-col items-center" >
 
         <div className="shadow-xl mt-20 3xl:w-90 sm:w-[37.5rem] items-center justify-center flex " >
-          <Accordion className=" sm:w-[37.5rem] 3xl:w-[60rem]" open={open === 1}>
+          <Accordion className=" sm:w-[37.5rem] 3xl:w-[37.5rem]" open={open === 1}>
             <AccordionHeader className="sm:w-[37.5rem] 3xl:w-full uppercase font-montserrat text-sm text-[#075e6c] " onClick={() => handleOpen(1)}>Qual é o controle de custos e capacidade atrelado a um plano para melhoria contínua de produtividade?</AccordionHeader>
             <AccordionBody className="3xl:w-full sm:w-[37.5rem] ">
               Todas as unidades e projetos são administrados individualmente com análises de desempenho por competência e por caixa além dos indicadores de performance operacionais. Mensalmente é realizado o confrontamento entre realizado X orçado por projeto aonde são desenvolvido projetos de melhoria contínua e produtividade.
@@ -49,7 +49,7 @@ export default function FAQ() {
 
         </div>
 
-        <div className="shadow-xl mt-5 sm:w-[37.5rem] 3xl:w-90"  >
+        <div className="shadow-xl mt-5 sm:w-[37.5rem] 3xl:w-[37.5rem]"  >
           <Accordion className=" 3xl:w-full sm:w-[37.5rem]" open={open === 2}>
             <AccordionHeader className="uppercase font-montserrat text-sm text-[#075e6c]  " onClick={() => handleOpen(2)}>Qual a estrutura de overhead (pessoas que suportam a conta, mas não trabalham diretamente na operação)?</AccordionHeader>
             <AccordionBody>

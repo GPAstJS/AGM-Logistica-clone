@@ -11,10 +11,10 @@ import { useScreenSize } from "../hooks/useScreenSize";
 
 export default function Sobre() {
   return (
-    <div className="flex flex-col items-center md:w-full sm:w-[90%]">
+    <div className="flex flex-col items-center md:w-full sm:w-[40rem]">
       <Header />
-      <div className="3xl:w-full p-2 sm:w-[90%] flex mt-20 flex-col items-center font-montserrat justify-center">
-        <div className="w-full bg-[#f6f6f6] h-[6rem] flex items-center justify-center">
+      <div className="3xl:w-full sm:w-[40rem] flex mt-20 flex-col items-center font-montserrat justify-center">
+        <div className="w-full sm:p-2 bg-[#f6f6f6] h-[6rem] flex items-center justify-center">
           <div className="bg-transparent flex flex-row items-center justify-between sm:w-[100%] 3xl:w-[75rem]">
             <div>
               <h5 className="sm:text-xs uppercase font-bold text-[#075e6c]">

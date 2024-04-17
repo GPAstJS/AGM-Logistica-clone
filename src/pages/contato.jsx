@@ -24,7 +24,7 @@ export default function Contato() {
       </div>
 
       <div className="3xl:w-full 3xl:mt-10 3xl:mb-10 sm:w-[40rem] flex flex-col mt-28 items-center justify-center">
-        <div className="3xl:flex 3xl:flex-row 3xl:items-center 3xl:mb-10 3xl:justify-center sm:grid sm:grid-cols-2 3xl:w-[75rem] sm:w-[40rem] ">
+        <div className="3xl:flex 3xl:flex-row 3xl:mb-10 3xl:justify-center sm:grid sm:grid-cols-2 3xl:w-[75rem] sm:w-[40rem] ">
         <div className="3xl:w-[22rem] sm:w-full sm:mt-[1rem]  h-full flex 3xl:flex-row sm:flex-col sm:items-center sm:justify-center 3xl:items-start 3xl:justify-start ">
           <div className="flex items-center sm:mt-5 justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
             <img src={Bezier} alt="test" />
