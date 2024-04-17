@@ -20,7 +20,7 @@ export default function Home() {
 
 
   return (    
-    <div className="flex flex-col items-center 3xl:w-full sm:w-[40rem]  ">
+    <div className="flex flex-col items-center md:w-full sm:w-[40rem]  ">
       <Header />
       <div className="3xl:w-full sm:w-[40rem] flex flex-row justify-around items-center">
         <div className="3xl:w-[69rem] sm:w-[40rem] font-montserrat pt-20">
