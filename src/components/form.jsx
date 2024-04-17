@@ -59,7 +59,7 @@ const Form = () => {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="3xl:w-[37.5rem]  h-[13rem] border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] "
+              className="3xl:w-[40rem]  h-[13rem] border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] "
               placeholder="Mensagem"
               name=""
               id=""
