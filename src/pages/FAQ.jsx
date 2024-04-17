@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "../components/header";
+
 import {
   Accordion,
   AccordionHeader,
@@ -8,12 +8,13 @@ import {
 
 import Form from '../components/form'
 import Footer from '../components/footer'
+import Header from "../components/header";
 
 export default function FAQ() {
-
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
   return (
     <div className="font-montserrat">
       <Header />

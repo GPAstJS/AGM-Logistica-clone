@@ -1,7 +1,8 @@
-import Header from "../components/header";
 import Form from "../components/form";
+import Header from "../components/header";
 import Footer from "../components/footer";
-import Bezier from "../assets/bezier.svg";
+
+import bezier from "../assets/bezier.svg";
 
 export default function Servicos() {
   return (
@@ -33,7 +34,7 @@ export default function Servicos() {
           <div className="flex 3xl:flex-row sm:flex-col h-[20rem] sm:mt-32 sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
-                <img src={Bezier} alt="Test" />
+                <img src={bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
                 logística integrada
@@ -55,7 +56,7 @@ export default function Servicos() {
           <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
-                <img src={Bezier} alt="Test" />
+                <img src={bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
                 armazenamento
@@ -74,8 +75,8 @@ export default function Servicos() {
           </div>
           <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
-              <div className=" flex w-[20rem] items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
-                <img src={Bezier} alt="Test" />
+              <div className=" flex w-[20rem] items-center justify-center h-[5rem] bg-[#075e6c] rounded-full">
+                <img src={bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
                  logística in-house
@@ -95,7 +96,7 @@ export default function Servicos() {
           <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
-                <img src={Bezier} alt="Test" />
+                <img src={bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
                 logística reversa
@@ -115,7 +116,7 @@ export default function Servicos() {
           <div className="flex sm:flex-col 3xl:flex-row sm:mb-20 sm:mt-20 h-[20rem] sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
-                <img src={Bezier} alt="Test" />
+                <img src={bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
                 transporte e distribuição

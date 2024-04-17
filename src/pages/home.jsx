@@ -1,25 +1,23 @@
-import Header from "../components/header";
-
 import Form from "../components/form";
 import Footer from "../components/footer";
-import AMGDocLogo from "../assets/logomarca-agmdoc.png";
-import BezierIcon from "../assets/bezier.svg";
-import ArrowRangeIcon from "../assets/arrow-range.svg";
-import TruckIcon from "../assets/truck-icon.svg";
+import Header from "../components/header";
 
-import GraphIcon from "../assets/graph-up-arrow.svg";
-import NotebookIcon from "../assets/laptop.svg";
-import QuestionIcon from "../assets/question-circle-fill.svg";
-import BoxIcon from "../assets/dropbox.svg";
-import Maquininha from "../assets/maquininha.png";
-import TecSegImg from "../assets/tenologia-seguranca.png";
-import CompromissosImg from '../assets/gestaodecompromissoimg.jpg'
+import boxIcon from "../assets/dropbox.svg";
+import bezierIcon from "../assets/bezier.svg";
+import notebookIcon from "../assets/laptop.svg";
+import truckIcon from "../assets/truck-icon.svg";
+import graphIcon from "../assets/graph-up-arrow.svg";
+import arrowRangeIcon from "../assets/arrow-range.svg";
+import questionIcon from "../assets/question-circle-fill.svg";
+
+import maquininha from "../assets/maquininha.png";
+import amgDocLogo from "../assets/logomarca-agmdoc.png";
+import tecSegImg from "../assets/tenologia-seguranca.png";
+
+import CompromissosImg from "../assets/gestaodecompromissoimg.jpg";
 
 export default function Home() {
-
-
-
-  return (    
+  return (
     <div className="flex flex-col items-center md:w-full sm:w-[40rem]  ">
       <Header />
       <div className="3xl:w-full sm:w-[40rem] flex flex-row justify-around items-center">
@@ -42,7 +40,11 @@ export default function Home() {
           </p>
           <div>
             <div className="flex 3xl:flex-row sm:flex-col 3xl:justify-between sm:justify-center sm:items-center font-montserrat mt-10 font-semibold text-[#075E6C] 3xl:w-[42rem] sm:w-[40rem]">
-              <img className="w-[11.375rem] h-[4.5rem] sm:mb-5" src={AMGDocLogo} alt="AMG Doc" />
+              <img
+                className="w-[11.375rem] h-[4.5rem] sm:mb-5"
+                src={amgDocLogo}
+                alt="AMG Doc"
+              />
 
               <h4 className="text-left w-[27.5rem]">
                 <a href="https://agmdoc.com.br" target="_blank">
@@ -91,13 +93,12 @@ export default function Home() {
             processos – trazendo ganhos e vantagem competitiva.
           </p>
         </div>
-
       </div>
       <div className="w-full flex flex-col items-center mt-10 justify-center">
         <div className="3xl:w-[72.5rem] sm:w-[37.5rem]  flex 3xl:flex-row sm:flex-col  justify-between">
           <div className="flex flex-col 3xl:w-[22.5rem] sm:mb-5 h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-10   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
-              <img src={BezierIcon} alt="Bezier Icon" />
+              <img src={bezierIcon} alt="Bezier Icon" />
             </div>
 
             <a
@@ -115,7 +116,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:w-[37.5rem] sm:mb-5 3xl:w-[22.5rem] h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-14   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
-              <img src={ArrowRangeIcon} alt="Bezier Icon" />
+              <img src={arrowRangeIcon} alt="Bezier Icon" />
             </div>
 
             <a
@@ -133,7 +134,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:w-[37.5remp] 3xl:w-[22.5rem] h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-10   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
-              <img src={TruckIcon} alt="Bezier Icon" />
+              <img src={truckIcon} alt="Bezier Icon" />
             </div>
 
             <a
@@ -168,13 +169,12 @@ export default function Home() {
         </div>
       </div>
 
-
       <div className="3xl:w-full sm:w-[40rem] mt-20  flex items-center justify-center 3xl:flex-row sm:flex-col">
         <div className="w-[25rem] 3xl:h-[25rem] sm:h-full text-center font-montserrat items-center flex flex-col 3xl:justify-between sm:justify-center">
           <div className="flex flex-col items-center justify-center w-[16rem]">
             <img
               className="w-[3rem] h-[3rem] mb-4"
-              src={GraphIcon}
+              src={graphIcon}
               alt="Graph Icon"
             />
 
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="flex mt-5 flex-col items-center justify-center w-[16rem]">
             <img
               className="w-[3rem] h-[3rem] mb-4"
-              src={NotebookIcon}
+              src={notebookIcon}
               alt="Laptop Icon"
             />
 
@@ -207,14 +207,14 @@ export default function Home() {
         </div>
         <img
           className=" mt-10 3xl:w-[25rem] sm:w-[26.059rem] h-[31.25rem]"
-          src={Maquininha}
+          src={maquininha}
           alt="Maquininha"
         />
         <div className="w-[25rem] mt-10 text-center font-montserrat flex flex-col justify-between items-center">
           <div className="flex flex-col items-center justify-center w-[16rem]">
             <img
               className="w-[3rem] h-[3rem] mb-6"
-              src={QuestionIcon}
+              src={questionIcon}
               alt="Question Icon"
             />
 
@@ -231,7 +231,7 @@ export default function Home() {
           <div className="flex mt-10 flex-col items-center justify-center w-[16rem]">
             <img
               className="w-[3rem] h-[3rem] mb-6"
-              src={BoxIcon}
+              src={boxIcon}
               alt="Box Icon"
             />
 
@@ -257,52 +257,52 @@ export default function Home() {
 
         <div className="grid 3xl:grid-cols-6 sm:grid-cols-2 mt-10 gap-20">
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
 
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>saúde</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>educação</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>indústria</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>hotelaria</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>transportes</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>RH</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
           <div className="font-montserrat tracking-[0.1rem] uppercase text-[#075E6C] flex flex-col items-center justify-center">
-            <img src={NotebookIcon} alt="Test Icon" />
+            <img src={notebookIcon} alt="Test Icon" />
             <span>bancos</span>
           </div>
         </div>
@@ -351,23 +351,23 @@ export default function Home() {
             </div>
 
             <div>
-              <img src={TecSegImg} alt="Tecnologia e Segurança" />
+              <img src={tecSegImg} alt="Tecnologia e Segurança" />
             </div>
           </div>
 
           <div className="sm:w-[40rem] text-[#075e6c] flex 3xl:flex-row sm:flex-col items-center mt-20 justify-between">
             <div className="font-medium uppercase font-montserrat flex flex-col items-center justify-center sm:mb-5">
-              <img src={NotebookIcon} alt="test" />
+              <img src={notebookIcon} alt="test" />
               <p>monitoramento 24 horas</p>
             </div>
 
             <div className="font-medium uppercase font-montserrat flex flex-col items-center justify-center sm:mb-5">
-              <img src={NotebookIcon} alt="test" />
+              <img src={notebookIcon} alt="test" />
               <p>monitoramento 24 horas</p>
             </div>
 
             <div className="font-medium uppercase font-montserrat flex flex-col items-center justify-center">
-              <img src={NotebookIcon} alt="test" />
+              <img src={notebookIcon} alt="test" />
               <p>monitoramento 24 horas</p>
             </div>
           </div>
@@ -375,52 +375,60 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col w-full items-center font-montserrat font-bold mb-20 mt-20">
-
         <h6 className="text-[#075e6c] tracking-[0.3rem]">compromisso</h6>
         <h5 className="uppercase text-4xl">gestão da qualidade</h5>
 
         <div className="3xl:w-[72.5rem] w-[40rem] mt-20 flex 3xl:flex-row sm:flex-col items-center justify-center ">
-
-          <img className="3xl:w-[22.5rem] 3xl:h-[22.5rem] sm:h-[31.25rem] sm:w-[31.25rem] mb-5" src={CompromissosImg} alt="Compromisso Image" />
+          <img
+            className="3xl:w-[22.5rem] 3xl:h-[22.5rem] sm:h-[31.25rem] sm:w-[31.25rem] mb-5"
+            src={CompromissosImg}
+            alt="Compromisso Image"
+          />
 
           <div className="flex flex-col items-center ml-5 mr-3 justify-between sm:text-lg">
-
             <div className="flex flex-row font-montserrat mb-5   3xl:w-[40rem] sm:w-[35rem] ">
-
-              <p className="font-medium text-center"><strong className="opacity-80 font-bold" >Processos:</strong> confiabilidade e qualidade na gestão de todos os processos solicitados pelo cliente.  </p>
+              <p className="font-medium text-center">
+                <strong className="opacity-80 font-bold">Processos:</strong>{" "}
+                confiabilidade e qualidade na gestão de todos os processos
+                solicitados pelo cliente.{" "}
+              </p>
             </div>
 
             <div className="flex flex-row font-montserrat mb-5  3xl:w-[40rem] sm:w-[35rem] ">
-
-              <p className="font-medium text-center"><strong className="opacity-80 font-bold" >Processos:</strong> confiabilidade e qualidade na gestão de todos os processos solicitados pelo cliente.  </p>
-
+              <p className="font-medium text-center">
+                <strong className="opacity-80 font-bold">Processos:</strong>{" "}
+                confiabilidade e qualidade na gestão de todos os processos
+                solicitados pelo cliente.{" "}
+              </p>
             </div>
 
             <div className="flex flex-row font-montserrat mb-5 3xl:w-[40rem] sm:w-[35rem] ">
-
-              <p className="font-medium text-center"><strong className="opacity-80 font-bold" >Processos:</strong> confiabilidade e qualidade na gestão de todos os processos solicitados pelo cliente.  </p>
-
+              <p className="font-medium text-center">
+                <strong className="opacity-80 font-bold">Processos:</strong>{" "}
+                confiabilidade e qualidade na gestão de todos os processos
+                solicitados pelo cliente.{" "}
+              </p>
             </div>
 
             <div className="flex flex-row font-montserrat mb-5  3xl:w-[40rem] sm:w-[35rem] ">
-
-              <p className="font-medium text-center"><strong className="opacity-80 font-bold" >Processos:</strong> confiabilidade e qualidade na gestão de todos os processos solicitados pelo cliente.  </p>
-
+              <p className="font-medium text-center">
+                <strong className="opacity-80 font-bold">Processos:</strong>{" "}
+                confiabilidade e qualidade na gestão de todos os processos
+                solicitados pelo cliente.{" "}
+              </p>
             </div>
 
             <div className="flex flex-row font-montserrat mb-5 3xl:w-[40rem] sm:w-[35rem] ">
-
-              <p className="font-medium text-center"><strong className="opacity-80 font-bold" >Processos:</strong> confiabilidade e qualidade na gestão de todos os processos solicitados pelo cliente.  </p>
-
+              <p className="font-medium text-center">
+                <strong className="opacity-80 font-bold">Processos:</strong>{" "}
+                confiabilidade e qualidade na gestão de todos os processos
+                solicitados pelo cliente.{" "}
+              </p>
             </div>
-
-
           </div>
-
         </div>
-
       </div>
-      <Form/>
+      <Form />
       <Footer />
     </div>
   );
