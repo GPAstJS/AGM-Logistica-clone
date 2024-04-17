@@ -76,7 +76,7 @@ const Form = () => {
         </div>
 
         <div className=" flex flex-col items-center 3xl:w-[27rem] sm:w-[40rem] h-[21.25rem]">
-          <div className="sm:w-[37.5rem] 3xl:w-[25rem] sm:h-[15.6rem] flex flex-col justify-center items-center text-center text-white font-montserrat font-bold  bg-[#075e6c]">
+          <div className="sm:w-[37.5rem] 3xl:w-[25rem] sm:h-[15.6rem] 3xl:h-[21.25rem] flex flex-col justify-center items-center text-center text-white font-montserrat font-bold  bg-[#075e6c]">
             <img className="mb-5" src={WhatsAppIcon} alt="WhatsApp Icon" />
 
             <span className="text-4xl">(55) 21 99815-9083</span>
