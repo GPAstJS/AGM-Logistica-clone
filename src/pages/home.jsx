@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             <span className="text-[#1E1D24]">em logística</span>
           </h2>
-          <p className="text-[17px] mt-10 tracking-2 text-left text-black opacity-75 3xl:w-[45rem] sm:w-full">
+          <p className="text-[17px] mt-10 tracking-2 sm:text-center 3xltext-left text-black opacity-75 3xl:w-[45rem] sm:w-full">
             Fornecemos ao mercado e aos nossos clientes soluções inteligentes e
             eficazes de gestão logística, zelando pela integridade dos seus
             patrimônios, das pessoas e do meio ambiente, de forma rentável,
