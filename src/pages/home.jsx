@@ -14,13 +14,14 @@ import maquininha from "../assets/maquininha.png";
 import amgDocLogo from "../assets/logomarca-agmdoc.png";
 import tecSegImg from "../assets/tenologia-seguranca.png";
 
-import CompromissosImg from "../assets/gestaodecompromissoimg.jpg";
+import compromissosImg from "../assets/gestaodecompromissoimg.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center md:w-full sm:w-[40rem]  ">
+    <div className="flex flex-col items-center md:w-full sm:w-[100%]">
       <Header />
-      <div className="3xl:w-full sm:w-[40rem] flex flex-row justify-around items-center">
+
+      <div className="3xl:w-full sm:w-[90%] flex flex-row justify-around items-center">
         <div className="3xl:w-[69rem] sm:w-[40rem] font-montserrat pt-20">
           <h6 className="tracking-[0.3rem] text-[#417581] text-sm font-bold font-montserrat">
             conheça
@@ -47,7 +48,11 @@ export default function Home() {
               />
 
               <h4 className="text-left w-[27.5rem]">
-                <a href="https://agmdoc.com.br" target="_blank">
+                <a
+                  href="https://agmdoc.com.br"
+                  target="_blank"
+                  rel={"noopener noreferrer"}
+                >
                   Preocupado em como realizar a Transformação Digital na sua
                   empresa? Conheça nossos serviços de Gestão de Documentos?
                 </a>
@@ -55,6 +60,7 @@ export default function Home() {
                   className="ml-1"
                   href="https://agmdoc.com.br"
                   target="_blank"
+                  rel={"noopener noreferrer"}
                 >
                   www.agmdoc.com.br
                 </a>
@@ -64,7 +70,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="3xl:w-full sm:w-[40rem] mt-16 flex items-center justify-center flex-col">
+      <div className="3xl:w-full sm:w-[90%] mt-16 flex items-center justify-center flex-col">
         <div className="3xl:w-[72.5rem] sm:w-[40rem] font-montserrat 3xl:block sm:flex sm:flex-col sm:justify-center sm:items-center ">
           <h6 className="tracking-[0.1rem] text-[#417581] text-sm font-bold font-montserrat">
             sobre nós
@@ -94,6 +100,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       <div className="w-full flex flex-col items-center mt-10 justify-center">
         <div className="3xl:w-[72.5rem] sm:w-[37.5rem]  flex 3xl:flex-row sm:flex-col  justify-between">
           <div className="flex flex-col 3xl:w-[22.5rem] sm:mb-5 h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
@@ -151,6 +158,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="3xl:w-full flex flex-col mt-20  bg-transparent">
         <div className="3xl:w-full h-[16.25rem] flex items-center justify-center bg-[#0B4048]">
           <div className="3xl:w-[72.5rem] sm:w-[40rem]  bg-transparent tracking-[0.2rem] flex 3xl:flex-row sm:flex-col uppercase justify-between items-center text-white 3xl:text-3xl sm:text-[23px] sm:text-center  font-montserrat font-medium">
@@ -246,6 +254,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="w-full flex flex-col mt-20 items-center justify-center">
         <h6 className="tracking-[0.2rem] text-[#41x81] text-sm font-bold font-montserrat">
           áreas atendidas
@@ -381,8 +390,8 @@ export default function Home() {
         <div className="3xl:w-[72.5rem] w-[40rem] mt-20 flex 3xl:flex-row sm:flex-col items-center justify-center ">
           <img
             className="3xl:w-[22.5rem] 3xl:h-[22.5rem] sm:h-[31.25rem] sm:w-[31.25rem] mb-5"
-            src={CompromissosImg}
-            alt="Compromisso Image"
+            src={compromissosImg}
+            alt="Gestão de Compromissos"
           />
 
           <div className="flex flex-col items-center ml-5 mr-3 justify-between sm:text-lg">

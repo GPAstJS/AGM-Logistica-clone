@@ -1,29 +1,18 @@
-import React, { useEffect, useState } from "react";
 import SiteLogo from "../assets/site-logo.png";
 import MobileHeader from "./mobileHeader";
 import DesktopHeader from "./desktopHeader";
 
+import { useScreenSize } from "../hooks/useScreenSize";
+
 export default function Header() {
-  const [screenWidth, setScreenWidth] = useState(window.screen.width);
-
   const url = window.location.href;
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setScreenWidth(window.screen.width);
-    });
-
-    return () => {
-      window.removeEventListener("resize", () => {});
-    };
-  }, [screenWidth]);
 
   return (
     <div className="w-full flex flex-row justify-center pt-[2.75rem]">
       <div
-        className="3xl:w-[75rem] sm:w-[40rem] flex 3xl:flex-row sm:flex-col "
+        className="3xl:w-[75rem] sm:w-[90%] flex 3xl:flex-row sm:flex-col "
         style={
-          screenWidth <= 640
+          useScreenSize() <= 1160
             ? { flexDirection: "column", alignItems: "start" }
             : {
                 flexDirection:
@@ -37,7 +26,7 @@ export default function Header() {
           <img src={SiteLogo} alt="AGM Logomarca" />
         </div>
 
-        {screenWidth <= 640 ? <MobileHeader /> : <DesktopHeader />}
+        {useScreenSize() <= 1160 ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </div>
   );

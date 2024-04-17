@@ -6,7 +6,7 @@ import Bezier from "../assets/bezier.svg";
 
 export default function Contato() {
   return (
-    <div className="font-montserrat">
+    <div className="flex flex-col items-center md:w-full sm:w-[100%]">
       <Header />
       <div className="3xl:w-full sm:w-[40rem] h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center sm:items-center">
         <div className="3xl:w-[75rem] sm:w-[40rem] bg-transparent flex flex-row justify-between px-2">
@@ -75,20 +75,6 @@ export default function Contato() {
         </div>
         </div>
       </div>
-
-      {/* <div className="w-full flex mt-20 items-center justify-center mb-20">
-
-        <div className="w-[75rem] flex flex-col gap-y-3">
-
-            <input className="w-full h-[2.896rem] p-2 border-[1px] border-solid border-black text-black" type="text" placeholder="Nome" />
-            <input className="w-full h-[2.896rem] p-2 border-[1px] border-solid border-black text-black" type="text" placeholder="Empresa" />
-            <input className="w-full h-[2.896rem] p-2 border-[1px] border-solid border-black text-black" type="email" placeholder="Email" />
-            <input className="w-full h-[2.896rem] p-2 border-[1px] border-solid border-black text-black" type="text" placeholder="Telefone" />
-            <textarea className="w-full h-[12rem] p-2 border-[1px] border-solid border-black text-black" type="text" placeholder="Mensagem" />
-            <button className="text-white bg-[#818A91] h-[4rem] font-bold tracking-[0.3rem]">ENVIAR</button>
-        </div>
-
-      </div> */}
       <Form/>
       <Footer/>
     </div>

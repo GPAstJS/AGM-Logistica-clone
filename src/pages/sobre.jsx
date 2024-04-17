@@ -7,13 +7,15 @@ import banner from "../assets/banner-empresa2.jpg";
 import mobileBanner from "../assets/banner-empresa2-mobile.png";
 import ilustracaoQuemSomos from "../assets/ilustracao-quem-somos4.png";
 
+import { useScreenSize } from "../hooks/useScreenSize";
+
 export default function Sobre() {
   return (
-    <div>
+    <div className="flex flex-col items-center md:w-full sm:w-[90%]">
       <Header />
-      <div className="3xl:w-full p-2 sm:w-[40rem] flex mt-20 flex-col items-center  font-montserrat">
+      <div className="3xl:w-full p-2 sm:w-[90%] flex mt-20 flex-col items-center font-montserrat justify-center">
         <div className="w-full bg-[#f6f6f6] h-[6rem] flex items-center justify-center">
-          <div className="bg-transparent flex flex-row items-center justify-between sm:w-[40rem] 3xl:w-[75rem]">
+          <div className="bg-transparent flex flex-row items-center justify-between sm:w-[100%] 3xl:w-[75rem]">
             <div>
               <h5 className="sm:text-xs uppercase font-bold text-[#075e6c]">
                 conheça a agm logística
@@ -26,18 +28,18 @@ export default function Sobre() {
           </div>
         </div>
         <div
-          className="3xl:w-full sm:w-[40rem] sm:h-[5.063rem] 3xl:h-[27.375rem] mb-20 flex items-center justify-between"
+          className="3xl:w-full sm:w-[100%] sm:h-[5.063rem] 3xl:h-[27.375rem] mb-20 flex items-center justify-between"
           style={{
-            backgroundImage: `url(${window.screen.width == 640 ? mobileBanner : banner})`,
+            backgroundImage: `url(${useScreenSize() <= 1160 ? mobileBanner : banner})`,
           }}
         >
-          <h1 className="3xl:static sm:relative top-20 sm:ml-0 3xl:ml-28 uppercase font-bold font-montserrat sm:text-xl 3xl:text-3xl 3xl:w-[40rem] sm:mt-5 sm:w-[40rem] text-center 3xl:text-white sm:text-[#075e6c]">
+          <h1 className="3xl:static sm:relative top-20 sm:ml-0 3xl:ml-28 uppercase font-bold font-montserrat sm:text-xl 3xl:text-3xl 3xl:w-[40rem] sm:mt-5 sm:w-[100%] text-center 3xl:text-white sm:text-[#075e6c]">
             um dos principais especialistas em logística do mercado
           </h1>
         </div>
-        <div className="flex flex-col items-center justify-center ">
-          <div className="flex 3xl:flex-row sm:flex-col mt-16 items-center justify-between sm:w-[40rem] 3xl:w-[72.5rem]">
-            <div className="flex flex-col justify-between w-[35rem]">
+        <div className="flex flex-col items-center justify-center sm:w-[100%]">
+          <div className="flex 3xl:flex-row sm:flex-col mt-16 items-center justify-between sm:w-[100%] 3xl:w-[72.5rem]">
+            <div className="flex flex-col justify-between w-[35rem] sm:w-[90%]">
               <strong className="uppercase 3xl:text-3xl/[35px] sm:text-2xl text-[#075e6c]">
                 entregar excelência <br /> em logística, por 65 anos <br />{" "}
                 requer esforço e dedicação
