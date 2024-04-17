@@ -1,16 +1,17 @@
 
 import Header from "../components/header";
 import Footer    from "../components/footer";
+import Form  from "../components/form";
 import Bezier from "../assets/bezier.svg";
 
 export default function Contato() {
   return (
     <div className="font-montserrat">
       <Header />
-      <div className="w-full h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center">
-        <div className="w-[75rem] bg-transparent flex flex-row justify-between px-2">
+      <div className="3xl:w-full sm:w-[40rem] h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center sm:items-center">
+        <div className="3xl:w-[75rem] sm:w-[40rem] bg-transparent flex flex-row justify-between px-2">
           <div className="h-[2rem]">
-            <h5 className="uppercase text-sm  text-[#075e6c] font-bold">
+            <h5 className="uppercase sm:text-xs 3xl:text-sm  text-[#075e6c] font-bold">
               contato agm logística
             </h5>
           </div>
@@ -22,14 +23,14 @@ export default function Contato() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col mt-28 items-center justify-center">
-        <div className="flex flex-row w-[75rem] justify-between">
-        <div className="w-[22rem] h-[15rem] flex flex-row ">
-          <div className="flex items-center justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
+      <div className="3xl:w-full 3xl:mt-10 3xl:mb-10 sm:w-[40rem] flex flex-col mt-28 items-center justify-center">
+        <div className="3xl:flex 3xl:flex-row 3xl:items-center 3xl:mb-10 3xl:justify-center sm:grid sm:grid-cols-2 3xl:w-[75rem] sm:w-[40rem] ">
+        <div className="3xl:w-[22rem] sm:w-full sm:mt-[1rem]  h-full flex 3xl:flex-row sm:flex-col sm:items-center sm:justify-center 3xl:items-start 3xl:justify-start ">
+          <div className="flex items-center sm:mt-5 justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
             <img src={Bezier} alt="test" />
           </div>
 
-          <div className="ml-5 text-gray-700">
+          <div className="3xl:block sm:mt-5 sm:flex sm:flex-col sm:items-center sm:justify-center 3xl:ml-5 sm:text-xs text-gray-700">
             <span className="tracking-[0.3rem] font-bold text-[17px] text-[#075e6c]">
               Telefones:
             </span>
@@ -43,12 +44,13 @@ export default function Contato() {
             <p> (21) 96782-7020</p>
           </div>
         </div>
-        <div className="w-[22rem] h-[15rem] flex flex-row ">
-          <div className="flex items-center justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
+
+        <div className="3xl:w-[22rem] sm:w-full h-full sm:p-0 sm:m-0 flex 3xl:flex-row sm:flex-col 3xl:items-start 3xl:justify-start sm:items-center sm:justify-center ">
+          <div className="flex sm:mt-5 3xl:flex-row sm:flex-col items-center justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
             <img src={Bezier} alt="test" />
           </div>
 
-          <div className="ml-5 text-gray-700 w-[13rem]">
+          <div className="3xl:block sm:mt-5 sm:text-center sm:flex sm:flex-col sm:items-center sm:justify-center ml-5 sm:text-xs text-gray-700 w-[13rem]">
             <span className="tracking-[0.3rem] font-bold text-[17px] text-[#075e6c]">
               Endereço:
             </span>
@@ -57,12 +59,13 @@ export default function Contato() {
             <p>Estrada Rio D'Ouro, 1000 - Pavuna, Rio de Janeiro/RJ CEP:21535-030</p>
           </div>
         </div>
-        <div className="w-[22rem] h-[15rem] flex flex-row ">
-          <div className="flex items-center justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
+
+        <div className="3xl:w-[22rem] sm:mt-10 sm:mb-20 sm:w-[40rem] h-full flex 3xl:flex-row sm:flex-col 3xl:items-start 3xl:justify-start sm:items-center sm:justify-center ">
+          <div className="flex 3xl:mt-0 sm:mt-5 3xl:flex-row sm:flex-col items-center justify-center bg-[#075e6c] h-[4rem] w-[4rem] rounded-full">
             <img src={Bezier} alt="test" />
           </div>
 
-          <div className="ml-5 text-gray-700">
+          <div className="ml-5 sm:text-center sm:mt-5 text-gray-700">
             <span className="tracking-[0.3rem] font-bold text-[17px] text-[#075e6c]">
               E-mail:
             </span>
@@ -73,7 +76,7 @@ export default function Contato() {
         </div>
       </div>
 
-      <div className="w-full flex mt-20 items-center justify-center mb-20">
+      {/* <div className="w-full flex mt-20 items-center justify-center mb-20">
 
         <div className="w-[75rem] flex flex-col gap-y-3">
 
@@ -85,7 +88,8 @@ export default function Contato() {
             <button className="text-white bg-[#818A91] h-[4rem] font-bold tracking-[0.3rem]">ENVIAR</button>
         </div>
 
-      </div>
+      </div> */}
+      <Form/>
       <Footer/>
     </div>
   );

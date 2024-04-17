@@ -4,8 +4,8 @@ import CheckIcon from "../assets/check-icon.svg";
 const Footer = () => {
   return (
     <div className="3xl:w-full sm:w-[40rem] flex flex-col 3xl:justify-center sm:justify-start 3xl:items-center sm:items-start bg-[#2E3447] sm:w-[30rem]">
-      <div className="3xl:w-[75rem] sm:w-full mt-10 flex 3xl:flex-row sm:flex-col 3xl:items-center sm:items-start ml-4 justify-between bg-transparent">
-        <div className="flex flex-col 3xl:w-[15.5rem] font-montserrat text-white  mb-[4rem] sm:w-[20rem]">
+      <div className="3xl:w-[75rem] sm:w-full mt-10 flex 3xl:flex-row sm:flex-col 3xl:items-center sm:items-start justify-between bg-transparent">
+        <div className="flex ml-4 flex-col 3xl:w-[15.5rem] font-montserrat text-white  mb-[4rem] sm:w-[20rem]">
           <h5 className="tracking-widest 3xl:text-sm sm:text-2xl uppercase font-bold sm:w-[26rem]">
             unidade pavuna centers
           </h5>
@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[4rem]">
+        <div className="flex flex-col  ml-4 font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[4rem]">
           <h5 className="tracking-widest uppercase font-bold 3xl:text-sm sm:text-2xl">
             unidade pavuna gd
           </h5>
@@ -30,8 +30,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[3.4rem]">
-          <h5 className="tracking-widest 3xl:text-sm sm:text-2xl uppercase font-bold">
+        <div className="flex flex-col ml-4 font-montserrat text-white 3xl:w-[15rem] sm:w-[26rem] mb-[3.4rem]">
+          <h5 className="tracking-widest sm:h-full 3xl:text-sm sm:text-2xl uppercase font-bold">
             contatos
           </h5>
 
@@ -56,7 +56,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col font-montserrat text-white w-[15rem] mb-[6.3rem]">
+        <div className="flex flex-col ml-4 font-montserrat text-white w-[15rem] mb-[6.3rem]">
           <h5 className="tracking-widest 3xl:text-sm sm:text-xl uppercase font-bold">
             termos legais
           </h5>

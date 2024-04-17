@@ -17,17 +17,15 @@ import CompromissosImg from '../assets/gestaodecompromissoimg.jpg'
 
 export default function Home() {
 
-  
+
 
   return (    
-    <div className="3xl:w-full sm:w-[40rem] flex flex-col items-center  ">
+    <div className="flex flex-col items-center 3xl:w-full sm:w-[40rem]  ">
       <Header />
       <div className="3xl:w-full sm:w-[40rem] flex flex-row justify-around items-center">
-
-
-        <div className="3xl:w-[69rem] p-0 m-0 sm:w-[40rem] font-montserrat pt-20">
+        <div className="3xl:w-[69rem] sm:w-[40rem] font-montserrat pt-20">
           <h6 className="tracking-[0.3rem] text-[#417581] text-sm font-bold font-montserrat">
-            conheça 
+            conheça
           </h6>
           <h2 className="text-[28pt] text-black leading-10 tracking-wide   uppercase font-montserrat font-bold">
             <span className="mr-2 text-[#075E6C]">65 anos</span>
@@ -43,10 +41,10 @@ export default function Home() {
             processos.
           </p>
           <div>
-            <div className="flex 3xl:flex-row sm:flex-col 3xl:justify-between sm:justify-center sm:items-center sm: font-montserrat mt-10 font-semibold text-[#075E6C] 3xl:w-[42rem] sm:w-[40rem]">
+            <div className="flex 3xl:flex-row sm:flex-col 3xl:justify-between sm:justify-center sm:items-center font-montserrat mt-10 font-semibold text-[#075E6C] 3xl:w-[42rem] sm:w-[40rem]">
               <img className="w-[11.375rem] h-[4.5rem] sm:mb-5" src={AMGDocLogo} alt="AMG Doc" />
 
-              <h4 className="3xl:text-left sm:text-center w-[27.5rem]">
+              <h4 className="text-left w-[27.5rem]">
                 <a href="https://agmdoc.com.br" target="_blank">
                   Preocupado em como realizar a Transformação Digital na sua
                   empresa? Conheça nossos serviços de Gestão de Documentos?
@@ -62,12 +60,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
-
       </div>
 
-      <div className="3xl:w-full sm:w-[40rem] mt-20 flex items-center justify-center flex-col">
+      <div className="3xl:w-full sm:w-[40rem] mt-16 flex items-center justify-center flex-col">
         <div className="3xl:w-[72.5rem] sm:w-[40rem] font-montserrat 3xl:block sm:flex sm:flex-col sm:justify-center sm:items-center ">
           <h6 className="tracking-[0.1rem] text-[#417581] text-sm font-bold font-montserrat">
             sobre nós
@@ -82,24 +77,25 @@ export default function Home() {
             AGMSBS Transportes, temos foco nas necessidades de cada cliente.
           </p>
 
-          <p className="text-[17px] mt-10 tracking-2  3xl:text-left sm:text-center  text-black opacity-75 3xl:w-[72.5rem]">
+          <p className="text-[17px] mt-10 tracking-2  3xl:text-left sm:text-center  text-black opacity-75 sm:w-[40rem] 3xl:w-[72.5rem]">
             Com mais de 65 anos de experiência na área de armazenagem e
             logística, temos extenso know-how no desenvolvimento de projetos
             customizados. Através de uma estrutura flexível da AGM oferecemos
             soluções logísticas integradas a diversos segmentos.
           </p>
 
-          <p className="text-[17px] mt-10 tracking-2 3xl:text-left sm:text-center text-black opacity-75 3xl:w-[72.5rem]">
+          <p className="text-[17px] mt-10 tracking-2 3xl:text-left sm:text-center text-black opacity-75 sm:w-[40rem] 3xl:w-[72.5rem]">
             Fornecemos soluções inteligentes e eficazes de gestão logística,
             zelamos pela integridade patrimonial, social e ambiental.
             Trabalhamos com o cliente na otimização e melhoria contínua de
             processos – trazendo ganhos e vantagem competitiva.
           </p>
         </div>
+
       </div>
       <div className="w-full flex flex-col items-center mt-10 justify-center">
-        <div className="3xl:w-[72.5rem]  flex 3xl:flex-row sm:flex-col  justify-between">
-          <div className="flex flex-col 3xl:w-[22.5rem] sm:w-[30rem] sm:mb-5 h-[22.5rem] border-[1px]  3xl:px-5 sm:px-0 items-center font-montserrat ">
+        <div className="3xl:w-[72.5rem] sm:w-[37.5rem]  flex 3xl:flex-row sm:flex-col  justify-between">
+          <div className="flex flex-col 3xl:w-[22.5rem] sm:mb-5 h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-10   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
               <img src={BezierIcon} alt="Bezier Icon" />
             </div>
@@ -117,7 +113,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col 3xl:w-[22.5rem] sm:w-[30rem] sm:mb-5 h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
+          <div className="flex flex-col sm:w-[37.5rem] sm:mb-5 3xl:w-[22.5rem] h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-14   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
               <img src={ArrowRangeIcon} alt="Bezier Icon" />
             </div>
@@ -135,7 +131,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col 3xl:w-[22.5rem] sm:w-[30rem] h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
+          <div className="flex flex-col sm:w-[37.5remp] 3xl:w-[22.5rem] h-[22.5rem] border-[1px] px-5 items-center font-montserrat ">
             <div className="flex justify-center items-center mt-10   rounded-full w-[5rem] h-[5rem] bg-[#075E6C]">
               <img src={TruckIcon} alt="Bezier Icon" />
             </div>
@@ -313,7 +309,7 @@ export default function Home() {
       </div>
 
       <div className="3xl:w-full sm:w-[40rem] flex items-center justify-center mt-10 bg-[#075E6C] 3xl:h-[8rem] sm:h-full">
-        <div className="3xl:w-[72.5rem sm:w-full flex 3xl:flex-row sm:flex-col items-center justify-between font-montserrat uppercase font-medium text-white bg-transparent">
+        <div className="3xl:w-[72.5rem sm:w-full flex 3xl:flex-row sm:flex-col items-center 3xl:justify-around justify-center sm:justify-between font-montserrat uppercase font-medium text-white bg-transparent">
           <div className="flex flex-col items-center sm:mb-5 sm:mt-5">
             <span className="text-5xl">300</span>
             <p className="uppercase font-medium">funcionários</p>
@@ -336,8 +332,8 @@ export default function Home() {
       </div>
 
       <div className="3xl:w-full sm:w-[40rem] flex flex-col items-center mt-20 justify-center">
-        <div className="3xl:w-[72.5rem] flex flex-col">
-          <div className="w-[72.5rem] flex 3xl:flex-row sm:flex-col items-center justify-between">
+        <div className="3xl:w-[72.5rem] sm:w-[40rem] flex flex-col">
+          <div className="3xl:w-[72.5rem] sm:w-[40rem] flex 3xl:flex-row sm:flex-col items-center justify-between">
             <div className="flex flex-col sm:items-center font-bold text-[#075e6c] tracking-[0.2rem] font-montserrat">
               <p>estrutura</p>
               <h3 className="uppercase text-center font-bold font-montserrat text-black text-4xl opacity-90 tracking-[0.1rem]">
@@ -359,7 +355,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-[#075e6c] flex 3xl:flex-row sm:flex-col items-center mt-20 justify-between">
+          <div className="sm:w-[40rem] text-[#075e6c] flex 3xl:flex-row sm:flex-col items-center mt-20 justify-between">
             <div className="font-medium uppercase font-montserrat flex flex-col items-center justify-center sm:mb-5">
               <img src={NotebookIcon} alt="test" />
               <p>monitoramento 24 horas</p>
@@ -425,7 +421,7 @@ export default function Home() {
 
       </div>
       <Form/>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

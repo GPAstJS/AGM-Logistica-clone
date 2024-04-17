@@ -5,17 +5,17 @@ import Bezier from "../assets/bezier.svg";
 
 export default function Servicos() {
   return (
-    <div className="font-montserrat">
+    <div className="3xl:w-full flex flex-col items-center justify-center sm:w-[40rem] font-montserrat">
       <Header />
-      <div className="w-full h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center">
-        <div className="w-[75rem] bg-transparent flex flex-row justify-between px-2">
+      <div className="3xl:w-full sm:w-[40rem] h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center">
+        <div className="3xl:w-[75rem] sm:w-[40rem] bg-transparent flex 3xl:flex-row sm:flex-col justify-between px-2">
           <div className="h-[2rem]">
-            <h5 className="uppercase text-sm  text-[#075e6c] font-bold">
+            <h5 className="uppercase sm:text-xs 3xl:text-sm sm:mt-2 text-[#075e6c] font-bold">
               serviços de logística e armazenagem
             </h5>
           </div>
           <div className="h-[2rem]">
-            <p className="text-[12px]">
+            <p className="sm:text-xs 3xl:text-[12px]">
               Você está aqui: AGM LOGÍSTICA / SERVIÇOS DE LOGÍSTICA E
               ARMAZENAGEM
             </p>
@@ -23,15 +23,15 @@ export default function Servicos() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center mt-20">
+      <div className="3xl:w-full sm:w-[40rem] flex flex-col items-center justify-center mt-20">
         <h6 className="tracking-[0.2rem] text-[#075e6c] font-bold">serviços</h6>
-        <h2 className="uppercase text-[40px] font-bold tracking-[0.1rem]">
+        <h2 className="uppercase sm:text-2xl 3xl:text-[40px] font-bold tracking-[0.1rem]">
           serviços oferecidos
         </h2>
 
-        <div className="flex flex-col uppercase w-[90rem] mt-20 items-center justify-center">
-          <div className="flex flex-row h-[20rem] w-full items-center justify-between">
-            <div className="flex w-[50%] flex-col items-center justify-center">
+        <div className="flex flex-col uppercase sm:w-[40rem] 3xl:w-[90rem]  items-center justify-center">
+          <div className="flex 3xl:flex-row sm:flex-col h-[20rem] sm:mt-32 sm:w-[40rem] 3xl:w-full items-center justify-between">
+            <div className="flex flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
                 <img src={Bezier} alt="Test" />
               </div>
@@ -41,7 +41,7 @@ export default function Servicos() {
             </div>
 
             <div className="flex flex-col w-[37.5rem]">
-              <p className="normal-case w-[40rem]">
+              <p className="normal-case sm:w-full 3xl:w-[40rem]">
                 Controle completo de todo o fluxo logístico: da matéria prima ao
                 produto nas mãos do consumidor final.
               </p>
@@ -51,7 +51,8 @@ export default function Servicos() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row h-[20rem] w-full items-center justify-between">
+
+          <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
             <div className="flex w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
                 <img src={Bezier} alt="Test" />
@@ -62,7 +63,7 @@ export default function Servicos() {
             </div>
 
             <div className="flex flex-col w-[37.5rem]">
-              <p className="normal-case w-[40rem]">
+              <p className="normal-case 3xl:w-[40rem] sm:w-full">
               Infraestrutura completa para estocagem/armazenagem de diversos tipos de produtos. 360.000m3 em conformidade com todas as regulações e segurança necessárias.
               </p>
 
@@ -71,18 +72,18 @@ export default function Servicos() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row h-[20rem] w-full items-center justify-between">
-            <div className="flex w-[50%] flex-col items-center justify-center">
-              <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
+          <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
+            <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
+              <div className=" flex w-[20rem] items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
                 <img src={Bezier} alt="Test" />
               </div>
               <p className="uppercase text-[#075e6c] text-3xl font-bold mt-2">
-                logística in-house
+                 logística in-house
               </p>
             </div>
 
             <div className="flex flex-col w-[37.5rem]">
-              <p className="normal-case w-[40rem]">
+              <p className="normal-case sm:w-full 3xl:w-[40rem]">
               Deixar a operação do seu parque logístico nas mãos de um especialista se traduz em ganho trabalhista e despreocupação. Conheça mais sobre o Outsourcing em Logística.
               </p>
 
@@ -91,8 +92,8 @@ export default function Servicos() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row h-[20rem] w-full items-center justify-between">
-            <div className="flex w-[50%] flex-col items-center justify-center">
+          <div className="flex sm:flex-col 3xl:flex-row h-[20rem] sm:mt-20 sm:w-[40rem] 3xl:w-full items-center justify-between">
+            <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
                 <img src={Bezier} alt="Test" />
               </div>
@@ -102,7 +103,7 @@ export default function Servicos() {
             </div>
 
             <div className="flex flex-col w-[37.5rem]">
-              <p className="normal-case w-[40rem]">
+              <p className="normal-case sm:w-full 3xl:w-[40rem]">
               Ingressar na economia circular pós 2020 é essencial. E a logística reversa é a principal ferramenta para a redução de custoso e aumento de valor da sua marca ou produto.  
               </p>
 
@@ -111,8 +112,8 @@ export default function Servicos() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row h-[20rem] w-full items-center justify-between">
-            <div className="flex w-[50%] flex-col items-center justify-center">
+          <div className="flex sm:flex-col 3xl:flex-row sm:mb-20 sm:mt-20 h-[20rem] sm:w-[40rem] 3xl:w-full items-center justify-between">
+            <div className="flex sm:w-full 3xl:w-[50%] flex-col items-center justify-center">
               <div className=" flex items-center justify-center h-[5rem] w-[5rem] bg-[#075e6c] rounded-full">
                 <img src={Bezier} alt="Test" />
               </div>
@@ -122,7 +123,7 @@ export default function Servicos() {
             </div>
 
             <div className="flex flex-col w-[37.5rem]">
-              <p className="normal-case w-[40rem]">
+              <p className="normal-case sm:w-full 3xl:w-[40rem]">
               Soluções em transporte em todas as etapas do processo, da indústria para o centro de distribuição e para o consumidor final. Conheça nossos modais de transporte. 
               </p>
 
