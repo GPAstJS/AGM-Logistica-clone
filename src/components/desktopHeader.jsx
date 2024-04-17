@@ -1,11 +1,11 @@
-import React from 'react'
-
 const DesktopHeader = () => {
   return (
-    <div style={{
-        marginLeft: window.location.href !== "http://localhost:3000/" ? "11rem" : "0"
-      }}>
-
+    <div
+      style={{
+        marginLeft:
+          window.location.href !== "http://localhost:3000/" ? "11rem" : "0",
+      }}
+    >
       <ul className="flex flex-row font-montserrat font-bold  text-sm uppercase">
         <li className="3xl:p-2 w-[4rem] hover:text-[#075E6C] ">
           <a href="/">home</a>
@@ -23,9 +23,8 @@ const DesktopHeader = () => {
           <a href="faq">faq</a>
         </li>
       </ul>
-      </div>
-      
-  )
-}
+    </div>
+  );
+};
 
-export default DesktopHeader
+export default DesktopHeader;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "../components/header";
+
 import {
   Accordion,
   AccordionHeader,
@@ -8,14 +8,15 @@ import {
 
 import Form from '../components/form'
 import Footer from '../components/footer'
+import Header from "../components/header";
 
 export default function FAQ() {
-
   const [open, setOpen] = useState(1);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
   return (
-    <div className="font-montserrat">
+    <div className="flex flex-col items-center md:w-full sm:w-[100%]">
       <Header />
       <div className="3xl:w-full sm:w-[40rem] h-[5rem] bg-[#F6F6F6] items-center font-montserrat flex flex-col justify-center">
         <div className="3xl:w-[75rem] sm:w-[40rem] bg-transparent flex flex-row justify-between px-2">

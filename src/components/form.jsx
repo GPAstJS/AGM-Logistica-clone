@@ -1,24 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState } from "react";
 
-import Fetch from "../hooks/sendMail";
-
-
-import React from "react";
-import WhatsAppIcon from '../assets/whatsapp.svg'
+import WhatsAppIcon from "../assets/whatsapp.svg";
 
 const Form = () => {
-
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: ''
-  })
-
-  console.log(formData)
-
-
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
 
   return (
     <div className="3xl:w-full sm:w-[40rem]  flex flex-col font-montserrat mt-10 mb-10">
@@ -32,24 +23,60 @@ const Form = () => {
       <div className="w-full flex 3xl:flex-row sm:flex-col justify-center  items-center mt-10">
         <div className="w-[40rem]">
           <div className="3xl:grid 3xl:grid-cols-2 3xl:gap-4 sm:flex sm:flex-col sm:px-5 ">
-
-            <input onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Nome" />
-            <input onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Email" />
-            <input onChange={(e) => setFormData({ ...formData, phone: e.target.value })} className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Telefone" />
-            <input onChange={(e) => setFormData({ ...formData, company: e.target.value })} className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 " type="text" placeholder="Empresa" />
-            <textarea onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="3xl:w-[37.5rem]  h-[13rem] border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] " placeholder="Mensagem" name="" id="" cols="30" rows="10"></textarea>
+            <input
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 "
+              type="text"
+              placeholder="Nome"
+            />
+            <input
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 "
+              type="text"
+              placeholder="Email"
+            />
+            <input
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
+              className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 "
+              type="text"
+              placeholder="Telefone"
+            />
+            <input
+              onChange={(e) =>
+                setFormData({ ...formData, company: e.target.value })
+              }
+              className="border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] sm:mb-3 "
+              type="text"
+              placeholder="Empresa"
+            />
+            <textarea
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+              className="3xl:w-[37.5rem]  h-[13rem] border-[1px] p-3 border-[#7a7a7a] sm:h-[4rem] "
+              placeholder="Mensagem"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
 
           <div className="w-[40rem] h-[5rem] flex justify-center items-center ">
-            <button className="uppercase   hover:bg-[#F7A600] hover:duration-500 text-white font-bold w-[20rem] h-[3rem] bg-[#075E6C] tracking-[0.2rem]" >solicitar contato</button>
+            <button className="uppercase   hover:bg-[#F7A600] hover:duration-500 text-white font-bold w-[20rem] h-[3rem] bg-[#075E6C] tracking-[0.2rem]">
+              solicitar contato
+            </button>
           </div>
-
         </div>
 
-        <div className=" flex flex-col items-center 3xl:w-[27rem] sm:w-[40rem] h-[21.25rem] items-center ">
-
+        <div className=" flex flex-col items-center 3xl:w-[27rem] sm:w-[40rem] h-[21.25rem]">
           <div className="sm:w-[37.5rem] 3xl:w-[25rem] mt-1 sm:h-[15.6rem] flex flex-col justify-center items-center text-center text-white font-montserrat font-bold  bg-[#075e6c]">
-
             <img className="mb-5" src={WhatsAppIcon} alt="WhatsApp Icon" />
 
             <span className="text-4xl">(55) 21 99815-9083</span>
@@ -59,14 +86,15 @@ const Form = () => {
             <p className="text-xl">Comercial Guarda de Documentos</p>
 
             <div className=" mt-3 flex flex-row">
-
               <strong className="text-lg">E-mail: </strong>conheça
-              <a className="font-thin ml-2" href="mailto:comercial@agmlogistica.com">comercial@agmlogistica.com</a>
-
+              <a
+                className="font-thin ml-2"
+                href="mailto:comercial@agmlogistica.com"
+              >
+                comercial@agmlogistica.com
+              </a>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>

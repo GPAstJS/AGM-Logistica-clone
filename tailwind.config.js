@@ -4,8 +4,8 @@ module.exports = withMT({
   content: ["./public/index.html", "./src/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': {'max' : '1200px'},
-      '3xl': '1201px',
+      'sm': {'max' : '1160px'},
+      '3xl': '1160px',
     },
     extend: {
       fontFamily: {

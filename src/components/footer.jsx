@@ -1,9 +1,8 @@
-import React from "react";
 import CheckIcon from "../assets/check-icon.svg";
 
 const Footer = () => {
   return (
-    <div className="3xl:w-full sm:w-[40rem] flex flex-col 3xl:justify-center sm:justify-start 3xl:items-center sm:items-start bg-[#2E3447] sm:w-[30rem]">
+    <div className="3xl:w-full sm:w-[100%] flex flex-col 3xl:justify-center sm:justify-start 3xl:items-center sm:items-start bg-[#2E3447]">
       <div className="3xl:w-[75rem] sm:w-full mt-10 flex 3xl:flex-row sm:flex-col 3xl:items-center sm:items-start justify-between bg-transparent">
         <div className="flex ml-4 flex-col 3xl:w-[15.5rem] font-montserrat text-white  mb-[4rem] sm:w-[20rem]">
           <h5 className="tracking-widest 3xl:text-sm sm:text-2xl uppercase font-bold sm:w-[26rem]">
@@ -70,20 +69,18 @@ const Footer = () => {
               src={CheckIcon}
               alt="Check Icon"
             />
-            
             Política de Privacidade
           </a>
         </div>
       </div>
 
       <div className="w-full bg-[#242938] flex 3xl:justify-center sm:justify-start text-center">
-
-      <div className="flex justify-start  mt-5 mb-3 items-center  h-[3rem]  3xl:w-[75rem] sm:w-[40rem] bg-transparent text-white sm:text-xl 3xl:text-xs">
-        <p>
-          © 2024 AGM Logistica. Todos os Direitos Reservados. - Desenvolvido
-          pela Profile Design
-        </p>
-      </div>
+        <div className="flex justify-start sm:justify-center mt-5 mb-3 items-center h-[3rem]  3xl:w-[75rem] sm:w-[100%] bg-transparent text-white sm:text-xl 3xl:text-xs">
+          <p>
+            © 2024 AGM Logistica. Todos os Direitos Reservados. - Desenvolvido
+            pela Profile Design
+          </p>
+        </div>
       </div>
     </div>
   );
