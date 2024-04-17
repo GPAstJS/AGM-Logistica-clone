@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import ArrowDown from '../assets/arrow-down-svgrepo-com.svg'
+
 const MobileHeader = () => {
   const [visibility, setVisibility] = useState("none");
 
@@ -9,12 +11,17 @@ const MobileHeader = () => {
 
   return (
     <div className="font-montserrat">
+      <div className="flex flex-row items-center justify-center">
+
       <button className="relative flex ml-3 mt-3 font-medium text-lg" onClick={displayHandler} href="#" >
         MORE
-      </button> 
+      </button>
+      
+      <img className="mt-2" src={ArrowDown} alt="Arrow Down Menu Icon" />
+      </div>
 
       <div
-        className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ml-3 absolute py-2 px-2 mt-3 text-sm bg-[#fff]  w-[12rem] h-[12rem]"
+        className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ml-3 absolute py-2 px-2 mt-3 text-[16px] bg-[#fff]  w-[12rem] h-[12rem]"
         style={{
           display: visibility,
         }}
