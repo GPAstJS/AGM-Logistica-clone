@@ -7,7 +7,7 @@ import React from "react";
 import WhatsAppIcon from '../assets/whatsapp.svg'
 
 const Form = () => {
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +18,7 @@ const Form = () => {
 
   console.log(formData)
 
-  
+
 
   return (
     <div className="3xl:w-full sm:w-[40rem]  flex flex-col font-montserrat mt-10 mb-10">

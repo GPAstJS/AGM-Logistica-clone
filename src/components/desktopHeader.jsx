@@ -19,14 +19,8 @@ const DesktopHeader = () => {
         <li className="3xl:p-2  sm:p-0 hover:text-[#075E6C] ">
           <a href="contato">contato</a>
         </li>
-        <li className="3xl:p-2 sm:p-0  hover:text-[#075E6C] ">  
-          <a href="areadocliente">área do cliente</a>
-        </li>
         <li className="3xl:p-2 sm:p-0 hover:text-[#075E6C] ">
           <a href="faq">faq</a>
-        </li>
-        <li className="3xl:p-2  sm:p-0 hover:text-[#075E6C] ">
-          <a href="carreira">trabalhe conosco</a>
         </li>
       </ul>
       </div>
