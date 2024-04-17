@@ -20,7 +20,7 @@ const Form = () => {
         </h2>
       </div>
 
-      <div className="w-full flex 3xl:flex-row sm:flex-col justify-center  items-center mt-10">
+      <div className="w-full flex 3xl:flex-row sm:flex-col justify-center">
         <div className="w-[40rem]">
           <div className="3xl:grid 3xl:grid-cols-2 3xl:gap-4 sm:flex sm:flex-col sm:px-5 ">
             <input
